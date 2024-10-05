@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar{
+    background-color: red;
+    color:white;
+    font-size: 15px;
+    height:50px;
+    padding:20px;
+}
+.add-popup{
+    background-color: blue;
+    font-size: 25px;
+    color:azure;
+    width:250px;
+    height:50px;
+    padding:10px;
+    margin:20px;
+    border: none;
+}
+table{
+    width:100%;
+    padding:20px;
+    border-collapse: collapse;
+}
+th,td{
+    padding:20px;
+    margin:20px;
+    letter-spacing: 3px;
+    border: 1px solid black;
+
+}
+.popup-overlay{
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    top:0;
+    left:0;
+    display: none;
+}
+.popup-box{
+    background-color:white;
+    width:40%;
+    padding:40px;
+    position: absolute;
+    z-index: 2;
+    top:20%;
+    left:20%;
+    border-radius: 10px;
+    display: none;
+
+}
+.popup-update-box{
+    background-color:white;
+    width:40%;
+    padding:40px;
+    position: absolute;
+    z-index: 2;
+    top:20%;
+    left:20%;
+    border-radius: 10px;
+    display: none;
+
+}
+.popup-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 15px;
+    padding:5px;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.popup-box button{
+    background-color:orange;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:5px;
+    font-size: 25px;
+    width: 30%;
+
+}
+.popup-box input::placeholder{
+    color:black;
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-update-box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 15px;
+    padding:5px;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.popup-update-box button{
+    background-color:orange;
+    color:white;
+    border:none;
+    padding:10px;
+    margin:5px;
+    font-size: 25px;
+    width: 30%;
+
+}
+.popup-update-box input::placeholder{
+    color:black;
+}
+.popup-update-box input:focus{
+    outline: none;
+}
+.update{
+    background-color:green;
+    font-size: 20px;
+    color:azure;
+    width:100px;
+    height:50px;
+    padding:10px;
+    margin:10px;
+    border: none;
+}
+.delete{
+    background-color:red;
+    font-size: 20px;
+    color:azure;
+    width:100px;
+    height:50px;
+    padding:10px;
+    margin:10px;
+    border: none;
+}
+.view{
+    background-color:blue;
+    font-size: 20px;
+    color:azure;
+    width:100px;
+    height:50px;
+    padding:10px;
+    margin:10px;
+    border: none;
+}

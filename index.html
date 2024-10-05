@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>STUDENT DETAILS SYSTEM</h1>
+    </div>
+    <div class="container">
+        <button id="add-popup-button" class="add-popup">Add Student</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student Age</th>
+                    <th>Student Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentDetails">
+
+            </tbody>
+        </table>
+    </div>
+     <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <form>
+            <input type="text" placeholder="student Name" id="student-name" required>
+            <input type="number" placeholder="student Age" id="student-age" required  min="0" max="99" oninput="validateAge(this)">
+            <input type="email" placeholder="student Email" id="student-email" required>
+            <button id="add-student">Add</button>
+            <button id="cancel-student">Cancel</button>
+        </form>
+    </div> 
+    <div class="popup-overlay"></div>
+    <div class="popup-update-box">
+        <form >
+            <input type="text" placeholder="student Name" id="ustudent-name" required >
+            <input type="number" placeholder="student Age" id="ustudent-age" required  min="0" max="99" oninput="validateAge(this)">
+            <input type="email" placeholder="student Email" id="ustudent-email" required>
+            <button id="update-student" type="submit" onclick="updateStudent()">update</button>
+            <button id="cancel-student">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
